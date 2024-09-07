@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import Carousel from '../components/carousel'
 
 export default function Home() {
@@ -88,10 +89,21 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-        {/* <h2 className='mt-8 block leading-8 font-semibold tracking-tight text-gray-700 sm:text-4xl'>Discover Our Exclusive Forums</h2> */}
-          {/* <p className='mt-4 text-md text-justify text-gray-600 leading-6'>
-          YUCI is designed to cater to the unique needs of professionals across different industries. Our exclusive forums offer a dedicated space for each profession, allowing members to connect, collaborate, and thrive in their respective fields. Here are some of the specialized forums we offer:
-          </p> */}
+        <h2 className='mt-8 block leading-8 font-semibold tracking-tight text-yellow-500 sm:text-4xl'>Join us in Making a Difference</h2>
+          <p className='mt-4 text-md text-justify text-gray-600 leading-6'>
+          Your support is crucial in helping us continue our mission. Every donation brings us one step closer to creating a better world for the elderly, orphans, EWS students, youth, and women. <br />
+          Donate today to be part of this transformative journey and help us provide a life of dignity, care, and opportunity for those in need. 
+          </p>
+          <div className="m-10 flex flex-1 justify-center">
+          <Link to='/join-us' className="text-sm font-semibold leading-6 text-white bg-yellow-500
+          active:text-yellow-500 hover:text-yellow-500 border-yellow-500
+           border-2
+            px-2 py-1 rounded
+          hover:bg-white
+            hover:font-extrabold transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
+            DONATE NOW <span aria-hidden="true">&rarr;</span>
+          </Link>
+        </div>
           {/* <ul className='my-6 px-6 text-gray-700' role="list">
             <li className='my-2'>•	Bureaucrat Forum</li>
             <li className='my-2'>•	Celebrity Forum</li>
